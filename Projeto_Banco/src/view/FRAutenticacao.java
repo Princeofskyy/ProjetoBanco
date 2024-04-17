@@ -50,7 +50,7 @@ public class FRAutenticacao extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(153, 153, 255));
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setForeground(new java.awt.Color(51, 51, 51));
         jLabel1.setText("LOGIN:");
 
         txtEmail.addActionListener(new java.awt.event.ActionListener() {
@@ -59,7 +59,7 @@ public class FRAutenticacao extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setForeground(new java.awt.Color(51, 51, 51));
         jLabel2.setText("SENHA:");
 
         btEntrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/KEY.png"))); // NOI18N
