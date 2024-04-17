@@ -46,7 +46,7 @@ public class FRSobre extends javax.swing.JDialog {
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/harrypotter.png"))); // NOI18N
+     
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -122,7 +122,7 @@ public class FRSobre extends javax.swing.JDialog {
                             .addComponent(jLabel5)
                             .addComponent(jLabel6)
                             .addComponent(jLabel4))
-                        .addGap(0, 148, Short.MAX_VALUE))
+                        .addGap(0, 34, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -136,6 +136,14 @@ public class FRSobre extends javax.swing.JDialog {
                                 .addComponent(jLabel7)
                                 .addGap(5, 5, 5)
                                 .addComponent(jLabel8)))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(81, 81, 81)
+                .addComponent(btnGitHub)
+                .addGap(64, 64, 64)
+                .addComponent(btnLinkedin)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(81, 81, 81)
@@ -147,19 +155,24 @@ public class FRSobre extends javax.swing.JDialog {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(61, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel8))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
-                .addComponent(jLabel9)
-                .addGap(28, 28, 28)
-                .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel6)
+                .addContainerGap(76, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel7)
+                            .addComponent(jLabel8))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
+                        .addComponent(jLabel9)
+                        .addGap(28, 28, 28)
+                        .addComponent(jLabel4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel6)))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnGitHub)
@@ -183,10 +196,6 @@ public class FRSobre extends javax.swing.JDialog {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnLinkedinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLinkedinActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnLinkedinActionPerformed
-
     private void btnGitHubMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGitHubMouseClicked
         try {
             Desktop desktop = Desktop.getDesktop();
@@ -201,14 +210,6 @@ public class FRSobre extends javax.swing.JDialog {
 
     }//GEN-LAST:event_btnGitHubActionPerformed
 
-    private void btnVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnVoltarActionPerformed
-
-    private void btnVoltarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnVoltarMouseClicked
-        this.dispose();
-    }//GEN-LAST:event_btnVoltarMouseClicked
-
     private void btnLinkedinMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLinkedinMouseClicked
         try {
             Desktop desktop = Desktop.getDesktop();
@@ -217,8 +218,19 @@ public class FRSobre extends javax.swing.JDialog {
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e);
         }
-
     }//GEN-LAST:event_btnLinkedinMouseClicked
+
+    private void btnLinkedinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLinkedinActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnLinkedinActionPerformed
+
+    private void btnVoltarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnVoltarMouseClicked
+        this.dispose();
+    }//GEN-LAST:event_btnVoltarMouseClicked
+
+    private void btnVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnVoltarActionPerformed
 
     /**
      * @param args the command line arguments

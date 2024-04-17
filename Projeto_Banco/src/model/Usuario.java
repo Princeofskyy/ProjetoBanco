@@ -19,16 +19,26 @@ public class Usuario {
     private String senha;
     private Date dataNasc ;
     private boolean ativo ;
+    private double saldo;
     
     public Usuario(){};
     
-    public Usuario(long pkUsuario, String nome, String email, String senha, Date dataNasc, boolean ativo ){
+    public Usuario(long pkUsuario, String nome, String email, String senha, Date dataNasc, boolean ativo, double saldo ){
         this.pkUsuario = pkUsuario;
         this.nome = nome;
         this.email = email;
         this.senha = senha;
         this.dataNasc = dataNasc;
         this.ativo = ativo;
+        this.saldo = saldo;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
     }
 
     public long getPkUsuario() {
